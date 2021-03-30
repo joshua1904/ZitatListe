@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/sortierenName"
+        android:title="Quote quiz"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/kopieren"
+        android:title="Copy"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/einfuegefunktion"
+        android:title="Import"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/hinzufuegen"
+        android:icon="@mipmap/add"
+        android:title="@string/todo"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/favListe"
+        android:icon="@mipmap/stern"
+        android:title="Show favorits"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/zurueckSetzen"
+        android:title="Reset"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/hilfe"
+        android:title="Help"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#373737"
+    tools:context="release.zitatliste.Hinzufuegen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#252525"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/ZitatEdit"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="#252525"
+                android:ems="10"
+                android:hint="quote"
+                android:inputType="textLongMessage"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#979797" />
+
+            <EditText
+                android:id="@+id/DatumEdit"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="#252525"
+                android:ems="10"
+                android:hint="date"
+                android:inputType="date|number"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#979797" />
+
+            <EditText
+                android:id="@+id/NameEdit"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="#252525"
+                android:ems="10"
+                android:hint="name"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#979797" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/Hinzufuegebtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="add" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#373737"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/weedBox"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="🥦"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/bierBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start|center_vertical"
+                android:text="🍺"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/sternBox"
+                style="@android:style/Widget.CompoundButton.CheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:text="⭐"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#373737"
+            android:orientation="vertical"></LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

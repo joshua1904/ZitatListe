@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">RealeaseZitatListeWirklich</string>
+    <string name="bearbeiten">Bearbeiten</string>
+    <string name="textview">TextView</string>
+    <string name="zitat_rate_spiel">Zitat Rate Spiel</string>
+    <string name="alle_zitate_kopieren">Alle Zitate Kopieren</string>
+    <string name="aus_zwischenablage_einfuegen">Aus Zwischenablage Einfuegen</string>
+    <string name="todo">TODO</string>
+    <string name="favoriten_alle_zitate_anzeigen">Favoriten/Alle Zitate anzeigen</string>
+    <string name="hilfe">Hilfe</string>
+    <string name="zur_cksetzen">Zurücksetzen</string>
+
+</resources>

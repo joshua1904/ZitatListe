@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#373737"
+    tools:context="release.zitatliste.bearbeiten">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#373737"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#252525"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/zitatEditb"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="#252525"
+                android:ems="10"
+                android:hint="quote"
+                android:inputType="textShortMessage"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#979797" />
+
+            <EditText
+                android:id="@+id/datumEditb"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="#252525"
+                android:ems="10"
+                android:hint="date"
+                android:inputType="textShortMessage"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#979797" />
+
+            <EditText
+                android:id="@+id/nameEditb"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:autofillHints=""
+                android:background="#252525"
+                android:ems="10"
+                android:hint="name"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#979797" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/weedBearbeitenBox"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="🥦"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/bierBearbeitenBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start|center_vertical"
+                android:text="🍺"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/sternBearbeitenBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:text="⭐"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bearbeiten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="save" />
+
+        <Button
+            android:id="@+id/loechen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="delete" />
+
+        <ListView
+            android:id="@+id/LISTE"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animationCache="true"
+            android:background="#373737"
+            android:cacheColorHint="#FF0202"
+            android:divider="@android:drawable/bottom_bar"
+            android:dividerHeight="1sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
